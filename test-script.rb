@@ -4,7 +4,7 @@ require 'json'
 require 'openssl'
 
 
-webhookUrl = "https://hooks.tocaro.im/integrations/inbound_webhook/qfxaspzlfbddmg8p6flyqyabr5wcyvhq"
+webhookUrl = "[[[insert your webhook uri ]]]"
 
 uri = URI.parse(webhookUrl)
 
