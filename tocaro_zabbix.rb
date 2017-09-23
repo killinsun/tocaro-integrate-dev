@@ -5,7 +5,7 @@ require 'openssl'
 
 title = ARGV[0]
 message = ARGV[1]
-webhookUri = ""
+webhookUri = "https://hooks.tocaro.im/integrations/inbound_webhook/9ulhvcjkc8iux8cec8twdiicxxn56hjz"
 
 uri = URI.parse(webhookUrl)
 
