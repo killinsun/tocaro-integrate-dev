@@ -20,18 +20,17 @@
  ```
 
 ### 3. Setting zabbix
-   #### Create media type
-    * Create media type at zabbix web UI.  
-     [Administration] -> [Media types] -> [Create Media type]  
-
-
-    * Type any parameters.  
-      Name: tocaro  
-      Type: Script  
-      Script name: tocaro  (**Name of bash script file in zabbix alert directory.**)  
-      Script parameters:  
-        param1 : tocaro webhook uri  
-        param2 : {ALERT.SUBJECT}  
-        param3 : {ALERT.MESSAGE}  
-      Enabled : check  
-
+#### Create media type
+* Create media type at zabbix web UI.  
+ [Administration] -> [Media types] -> [Create Media type]  
+```
+Type any parameters.  
+  Name: tocaro  
+  Type: Script  
+  Script name: tocaro  (**Name of bash script file in zabbix alert directory.**)  
+  Script parameters:  
+    param1 : tocaro webhook uri  
+    param2 : {ALERT.SUBJECT}  
+    param3 : {ALERT.MESSAGE}  
+  Enabled : check  
+```
