@@ -27,10 +27,10 @@ Type any parameters.
   Type: Script  
   Script name: tocaro  (**Name of bash script file in zabbix alert directory.**)  
   Script parameters:  
-    param1 : tocaro webhook uri Å¶  
+    param1 : tocaro webhook uri (1)
     param2 : {ALERT.SUBJECT}  
     param3 : {ALERT.MESSAGE}  
   Enabled : check  
 ```
-Å¶https://hooks.tocaro.im/integrations/inbound_webhook/[param1]
+(1)https://hooks.tocaro.im/integrations/inbound_webhook/[param1]
 
