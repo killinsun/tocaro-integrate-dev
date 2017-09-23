@@ -27,7 +27,7 @@
     * Type any parameters.
      Name: tocaro
      Type: Script
-     Script name: tocaro  (*** Name of bash script file in zabbix alert directory. ***)
+     Script name: tocaro  (**Name of bash script file in zabbix alert directory.**)
      Script parameters:
         param1 : tocaro webhook uri 
         param2 : {ALERT.SUBJECT}
