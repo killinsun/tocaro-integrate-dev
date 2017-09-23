@@ -3,14 +3,13 @@ require 'uri'
 require 'json'
 require 'openssl'
 
-title = ARGV[0]
-message = ARGV[1]
-webhookUri = "https://hooks.tocaro.im/integrations/inbound_webhook/9ulhvcjkc8iux8cec8twdiicxxn56hjz"
+webhookUri = "https://hooks.tocaro.im/integrations/inbound_webhook/" + ARGV[0]
+title = ARGV[1]
+message = ARGV[2]
 
-uri = URI.parse(webhookUrl)
+uri = URI.parse(webhookUri)
 
-params = { text: "", color: "info", attachments:[{title: $title,value: $message},{}] }
-
+params = { text: "CTCS-Tracon infomation", color: "info", attachments:[{title: title,value: message},{}] }
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true
 
@@ -21,3 +20,4 @@ http.start do |h|
   request.set_form_data(payload: params.to_json)
   response = h.request(request)
   end
+~        
