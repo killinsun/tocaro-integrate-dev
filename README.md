@@ -20,7 +20,7 @@
  ```
 
 3. Setting zabbix
-  3-1. Create media type
+  4. Create media type
     * Create media type at zabbix web UI.
      [Administration] -> [Media types] -> [Create Media type]
 
@@ -34,7 +34,7 @@
         param3 : {ALERT.MESSAGE}
      Enabled : check
 
-  3-2. Create Action
+  5. Create Action
     * Create new action.
       [Configuration] -> [Actions] -> [Create Action]
 
