@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/usr/bin/ruby /usr/lib/zabbix/alertscripts/tocaro.rb "${1}" "${2}" "${3}"
