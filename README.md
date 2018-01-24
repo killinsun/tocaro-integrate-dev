@@ -8,6 +8,8 @@
 
  ## Tips
 
+require -> ruby
+
 ### 1. Put your zabbix alert scripts directory.
  ```bash:check at
  # grep "AlertScriptsPath" /etc/zabbix/zabbix_server.conf 
@@ -15,6 +17,7 @@
 ### 2. Change file ownership
  ```bash:check at
  # chown zabbix:zabbix /path/to/script/tocaro*
+ # chmod a+x /path/to/script/tocaro*
  ```
 
 ### 3. Setting zabbix
